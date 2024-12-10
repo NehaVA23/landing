@@ -1,0 +1,770 @@
+body,
+html {
+  font-family: "Hanwha Gothic", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #777;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+h2,
+h3,
+h4 {
+  font-family: "Hanwha Gothic", sans-serif;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  font-weight: 800;
+  font-size: 36px;
+  color: #333;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+h4 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 15px;
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+a {
+  color: #608dfd;
+  font-weight: 400;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #608dfd;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #1e7a46;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+
+/* Navigation Bar */
+#menu {
+  padding: 15px;
+  transition: all 0.8s;
+}
+
+#menu.navbar-default {
+  background-color: var(--bg-color);
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar text and links */
+#menu a.navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 9px 20px 0;
+}
+
+/* Change navbar background color in dark theme */
+body[data-theme="dark"] #menu.navbar-default {
+  background-color: #002f5d;  /* Dark gray background in dark mode */
+}
+
+/* Change navbar background color in light theme */
+body[data-theme="light"] #menu.navbar-default {
+  background-color: #ffffff;  /* White background in light mode */
+}
+
+/* Correct placement of Login Icon */
+#menu .navbar-nav .login-icon-container {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px; /* Place at the right end */
+  z-index: 10;
+}
+
+#menu .navbar-nav .login-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu .navbar-nav .login-icon {
+  width: 20px;  /* Adjust to the size you prefer */
+  height: 20px;
+  vertical-align: middle; /* Align with text */
+}
+
+/* Light mode login icon color */
+body[data-theme="light"] .navbar-nav .login-icon {
+  filter: brightness(1) invert(1); /* White icon in light mode */
+}
+
+/* Dark mode login icon color */
+body[data-theme="dark"] .navbar-nav .login-icon {
+  filter: brightness(1) invert(0); /* Original icon color in dark mode */
+}
+
+/* Theme Toggle Button - Restored Previous Position */
+#menu .theme-toggle-container {
+  display: inline-block;
+  margin-left: 20px; /* Space between other items */
+  position: absolute;
+  right: 70px;  /* Ensure it is positioned close to the right */
+  top: 50%;
+  transform: translateY(-50%); /* Keep the toggle button aligned vertically */
+}
+
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--icon-color); /* Ensure icon color is visible in both themes */
+  cursor: pointer;
+  z-index: 100;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle-btn img {
+  width: 30px; /* Set appropriate size */
+  height: auto;
+}
+
+.theme-toggle-btn:hover {
+  color: #ff6347; /* Hover effect (tomato color) */
+}
+
+/* Light and Dark Mode Theme Toggle Icon Visibility */
+body[data-theme="light"] .theme-toggle-btn img {
+  filter: brightness(0) invert(1); /* White icon in light mode */
+}
+
+body[data-theme="dark"] .theme-toggle-btn img {
+  filter: brightness(1) invert(0); /* Original icon color in dark mode */
+}
+
+
+/* Header Section */
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background-color: #e5e5e5; /* Light gray background */
+  background-size: cover;
+  position: relative; /* Ensures proper stacking and positioning */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents content overflow */
+}
+
+.intro .overlay {
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Overlay above video but behind text */
+}
+
+.intro h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  z-index: 10; /* Ensure text appears above overlay */
+  position: relative;
+}
+
+.intro h1 span {
+  font-weight: 800;
+  color: #5ca9fb; /* Highlighted span color */
+}
+
+.intro p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10; /* Ensures paragraph stays above overlay */
+}
+
+header .intro-text {
+  padding-top: 350px;
+  padding-bottom: 200px;
+  text-align: center;
+  position: relative;
+  z-index: 10; /* Keeps text above video and overlay */
+}
+
+/* Left-aligned Intro Text */
+.intro-text-left {
+  padding-top: 0;
+  text-align: left;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensures text stays above overlay */
+}
+
+.intro-text-left h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.intro-text-left h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.intro-text-left p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/* Video Background */
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Keeps the video behind the overlay and text */
+}
+
+/* feature Section */
+.features-section {
+  text-align: center; /* Ensures text is centered */
+  padding-top: 10px; /* Adds top padding for spacing */
+}
+
+.feature-item {
+  display: center; /* Use flexbox for layout */
+  flex-direction: row; /* Stack content vertically */
+  justify-content:center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  padding: 20px;
+}
+
+.feature-video-container {
+  width: 200%; /* Ensures the video container spans the full width of its parent */
+  height: 700px; /* Adjust height as needed */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center content if needed */
+  align-items: center; /* Vertically center content */
+  position: relative; /* Proper alignment of video */
+  overflow: hidden; /* Prevents video overflow */
+  margin-bottom: 10px; /* Adds space between video and text */
+}
+
+.feature-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+}
+
+.feature-item h3,
+.feature-item p {
+  margin-top: 5px; /* Adds space between video and text */
+  color: #333; /* Text color */
+}
+
+@media screen and (max-width: 768px) {
+  .feature-video-container {
+    height: 250px; /* Adjusts video container height for smaller screens */
+  }
+} 
+
+
+
+
+/* About Section Styling */
+#about {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden; /* Ensures content doesn't spill during animation */
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-50%); /* Starts off-screen to the left */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#about.animate {
+  opacity: 1; /* Become visible */
+  transform: translateX(0); /* Move to the original position */
+}
+
+/* About Section Styling */
+#about h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#about h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+
+#about .about-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+
+#about .about-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #5ca9fb;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+
+#about img {
+  width: 520px;
+  margin-top: 10px;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+
+/* Line height for paragraphs */
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+/* Services Section */
+#services {
+  background: var(--services-bg);
+  padding: 60px 0;
+}
+
+#services .section-title h2 {
+  font-size: 30px;
+  color: var(--services-text);
+  margin-bottom: 20px;
+}
+
+#services .section-title p {
+  font-size: 18px;
+  color: var(--services-text);
+  margin-bottom: 20px;
+}
+
+.service-icon {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  border-radius: 30%;
+  display: block;
+  margin: 0 auto;
+  opacity: 0; /* Hidden initially */
+  transform: scale(0.5); /* Smaller size before animation */
+  transition: all 0.5s ease-in-out;
+}
+
+.service-icon.animate {
+  opacity: 1;
+  transform: scale(1); /* Original size */
+  animation: toggleScale 0.8s infinite alternate ease-in-out;
+}
+
+#services .service-desc {
+  margin-top: 20px;
+}
+
+#services .service-desc h3 {
+  font-size: 24px;
+  color: var(--services-text);
+  margin-bottom: 15px;
+}
+
+#services .service-desc p {
+  font-size: 16px;
+  color: var(--services-text);
+}
+
+/* Keyframes for Toggle Animation */
+@keyframes toggleScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* Gallery Section Styling */
+#portfolio {
+  padding: 200px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-items {
+  display: flex;
+  position: relative;
+  gap: 0px; /* Adjust spacing between overlapping elements */
+}
+
+.portfolio-item {
+  position: relative;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  flex: 1;
+  min-width: 300px; /* Ensures responsiveness */
+  z-index: 1;
+  margin: 0 -50px; /* Overlapping effect */
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 150%;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  transition: transform 0.3s ease, z-index 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.6); /* Slight zoom on hover */
+  z-index: 15; /* Bring to front */
+  opacity: 1;
+}
+
+.portfolio-item:not(:hover) {
+  opacity: 0.8; /* Fades out non-hovered items */
+}
+
+/* Text Overlay Styling */
+.portfolio-item .text-overlay {
+  position: absolute;
+  top: 70%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* White text for visibility */
+  font-size: 24px; /* Large text size */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px 7px #ffffff; /* Text shadow for better visibility */
+  pointer-events: none; /* Prevent interference with hover effects */
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+/* Team Section */
+#team {
+  padding: 100px 0;
+}
+#team h4 {
+  margin: 5px 0;
+}
+#team .team-img {
+  width: 240px;
+}
+#team .thumbnail {
+  background: transparent;
+  border: 0;
+}
+#team .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+/* Contact Section */
+#contact {
+  padding: 100px 0 60px;
+  background: linear-gradient(to right, #283048, #859398);
+  color: var(--contact-text);
+  font-family: "Open Sans", sans-serif;
+}
+
+#contact .section-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#contact .section-title h2 {
+  color: var(--contact-text);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+#contact .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #ff6f61; /* Accent color */
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#contact .section-title p {
+  color: #e1e1e1;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#contact form {
+  background: var(--contact-bg);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+#contact .form-group input:focus,
+#contact .form-group textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+  outline: none;
+}
+
+#contact .form-group textarea {
+  resize: none;
+}
+
+#contact .btn-custom {
+  background: var(--button-bg);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#contact .btn-custom:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-hover-color);
+  border: 2px solid var(--button-hover-color);
+}
+
+#contact .contact-item {
+  margin: 20px 0;
+}
+
+#contact .contact-item span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#contact .contact-item i.fa {
+  color: var(--button-bg);
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+#contact .social {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#contact .social ul {
+  padding: 0;
+  list-style: none;
+}
+
+#contact .social ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#contact .social ul li a {
+  color: var(--contact-text);
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+#contact .social ul li a:hover {
+  color: #ff6f61;
+}
+
+/* Footer Section */
+#footer {
+  background: #20232a;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer p {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
+#footer a {
+  color: #ff6f61;
+}
+
+#footer a:hover {
+  border-bottom: 2px solid #ff6f61;
+}
+
+/* Button Styles */
+button {
+  background-color: var(--link-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff9800;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --bg-color: #1e1e1e; /* Dark background color for navbar */
+  --text-color: #f0f0f0; /* Light text color */
+  --icon-color: #fff; /* Light icon color */
+  --contact-bg: #2c3e50; /* Dark background for contact section */
+  --contact-text: #f0f0f0; /* Light text color for contact section */
+  --services-bg: #333; /* Dark background for services section */
+  --services-text: #fff; /* Light text color for services section */
+  --button-bg: #ff6f61; /* Accent color */
+  --button-hover-bg: #fff;
+  --button-hover-color: #ff6f61;
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --bg-color: #fff; /* Light background color for navbar */
+  --text-color: #333; /* Dark text color */
+  --icon-color: #333; /* Dark icon color */
+  --contact-bg: #859398; /* Light background for contact section */
+  --contact-text: #333; /* Dark text color for contact section */
+  --services-bg: #f8f8f8; /* Light background for services section */
+  --services-text: #333; /* Dark text color for services section */
+  --button-bg: #ff6f61; /* Accent color */
+  --button-hover-bg: #fff;
+  --button-hover-color: #ff6f61;
+}

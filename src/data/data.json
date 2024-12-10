@@ -1,0 +1,151 @@
+{
+
+  "About": {
+    "paragraph": "We offer an Al-driven maritime optimization platform for the Indian Ocean, providing real-time navigation, fuel-efficient routing, and enhanced safety for vessels. Our solution combines advanced algorithms, machine learning, and Digital Twin technology to ensure seamless and sustainable maritime operationis",
+    "Why": [
+      "AI-powered",
+      "Real-time",
+      "Fuel-efficient"
+     
+    ],
+    "Why2": [
+      "Maritime safety",
+      "Digital Twin",
+      "Machine Learning"
+    ]
+  },
+  "Gallery": [
+  {
+    "imagePath": "img/portfolio/Digital-twin.jpeg",
+    "title": "Digital Twin"
+  },
+  {
+    "imagePath": "img/portfolio/Visual Maintenance.jpeg",
+    "title": "Visual Maintenance"
+  },
+  {
+    "imagePath": "img/portfolio/pitch.jpeg",
+    "title": "Pitch and RPM"
+  },
+  {
+    "imagePath": "img/portfolio/community.jpeg",
+    "title": "Digital Community"
+  },
+  {
+    "imagePath": "img/portfolio/Algo.jpeg",
+    "title": "Fast Routing Algorithm"
+  }
+],
+
+  "Services": [
+    {
+      "icon": "/icons/speedometer.png",
+      "name": "Fast Algorithm",
+      "text": "Ensures speed and accuracy using parallel computing, multithreading, and efficient data structures for optimal route calculations."
+    },
+    {
+      "icon": "/icons/interface.png",
+      "name": "Versatile ML Model",
+      "text": "Combines A* and Dijkstra’s strategies with real-time adjustments to deliver safe and optimal paths."
+    },
+    {
+      "icon": "/icons/cruise.png",
+      "name": "Digital Twin",
+      "text": "Simulates vessel performance under varying conditions, replicating ship design and operational characteristics."
+    },
+    {
+      "icon": "/icons/vehicle.png",
+      "name": "Pitch and RPM ML Model",
+      "text": "Fine-tunes propeller settings in real time for maximum efficiency."
+    },
+    {
+      "icon": "/icons/community.png",
+      "name": "Digital Log Community",
+      "text": "Enables secure note-sharing among ship crews for route insights and guidance."
+    },
+    {
+      "icon": "/icons/clock.png",
+      "name": "Live AI Insights",
+      "text": "Provides safety alerts and optimal route suggestions based on real-time and historical data."
+    },
+    {
+      "icon": "/icons/real-time-tracking.png",
+      "name": "Real-Time Navigation",
+      "text": " Offers a user-friendly interface with live updates for seamless navigation."
+    },
+    {
+      "icon": "/icons/tools.png",
+      "name": "Visual Maintenance",
+      "text": " Tracks engine health, detects anomalies, and sends maintenance alerts to optimize fuel usage."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      
+      "video": "/videos/head.mp4"
+    }
+    
+    ]
+}
